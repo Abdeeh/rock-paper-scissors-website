@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <title>Pierre feuille ciseaux !</title>
+</head>
+<body>
+    <div class="game-container">
+        <h1>Pierre, feuille, ciseaux !</h1>
+
+        <div class="selectors-container">
+            <button class="item-selector" id="rock-btn" onclick=rockSelected()>
+                <img src="rock.png" alt="Rock">
+                <span class="item-name">Rock</span>
+            </button>
+            <button class="item-selector" id="paper-btn" onclick=paperSelected()>
+                <img src="paper.png" alt="Paper">
+                <span class="item-name">Paper</span>
+            </button>
+            <button class="item-selector" id="scissors-btn" onclick=scissorsSelected()>
+                <img src="scissors.png" alt="Scissors">
+                <span class="item-name">Scissors</span>
+            </button>
+        </div>
+
+        <div class="results-container">
+            <p id="score-text">Player : <span id="player-score">0</span> - Computer : <span id="computer-score">0</span></p>
+            <p id="result-text"></p>
+            <div class="result-container">
+                <div class="player-result">
+                    <p>Player's choice</p>
+                    <div class="choice-box" id="player-choice-box">
+                        <img src="" alt="" id="player-choice-img">
+                    </div>
+                </div>
+                <div class="computer-result">
+                    <p>Computer's choice</p>
+                    <div class="choice-box" id="computer-choice-box">
+                        <img src="" alt="" id="computer-choice-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button id="reset-game-btn" onclick=resetGame()>Reset</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
