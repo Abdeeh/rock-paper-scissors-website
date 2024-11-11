@@ -17,7 +17,7 @@ function rockSelected() {
     switch(randomNumber) {
         case 0:
             computerChoiceImage.src="rock.png";
-            egalite();
+            tie();
             break;
         case 1:
             computerChoiceImage.src="paper.png";
@@ -45,7 +45,7 @@ function paperSelected() {
             break;
         case 1:
             computerChoiceImage.src="paper.png";
-            egalite();
+            tie();
             break;
         case 2:
             computerChoiceImage.src="scissors.png";
@@ -73,7 +73,7 @@ function scissorsSelected() {
             break;
         case 2:
             computerChoiceImage.src="scissors.png";
-            egalite();
+            tie();
             break;
         default:
             console.log("Something went wrong generating the random number");
@@ -82,7 +82,7 @@ function scissorsSelected() {
 }
 
 
-function egalite() {
+function tie() {
     resultText.textContent = ("Tie");
 }
 function computerWin() {
